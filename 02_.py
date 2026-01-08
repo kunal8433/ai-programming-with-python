@@ -1,9 +1,4 @@
-import time
-import numpy as np
-
-x = np.random.choice(1000000, size=1000000)
-
-start = time.time()
-result = sum(x) / len(x)
-print(result)
-print(time.time() - start)
+import pandas as pd
+grocereries = pd.Series(data=[30,20,10,"yes", "no"],  index = ["apples", "bananas", "oranges", "milk", "bread"])
+print(grocereries)
+print(grocereries["milk"])
