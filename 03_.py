@@ -1,5 +1,7 @@
-r = 5
-for i in range (1, r+1):
-    for j in range (1 ,i+1):
-     print("*", end="")
-    print() 
+import pandas as pd 
+kunal = pd.Series(data =[1,2,3,4],index =  ["kunal", "lucky", "jaat","malik"])
+print(kunal)
+print(kunal+1)
+print(kunal*2)
+print(kunal+5)
+print(kunal-2)
