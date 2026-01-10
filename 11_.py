@@ -1,6 +1,5 @@
-import numpy as np
-x = np.diag([1, 2, 3])
-print(x)
-print(type(x))
-print(x.shape)
-print(x.dtype)
+import pandas as pd
+items2 = [{'bikes': 20, 'pants': 30, 'watches': 35}, 
+          {'watches': 10, 'glasses': 50, 'bikes': 15, 'pants':5}]
+items = pd.DataFrame(items2, index = ["store1", "store2"])
+print(items)
