@@ -1,6 +1,6 @@
-import numpy as np
-array1 = np.array([["kunal", "lucky",1]])
-print(array1.shape)
-print(array1.size)
-print(array1.dtype)
-print(type(array1))
+import pandas as pd
+items = {"kunal" :pd.Series([10,20,30,40], index = ["book", "pen", "notebook", "bag"]),
+         "lucky": pd.Series ([15,25,35,45], index = ["book", "pen", "notebook", "bag"]),}
+print(type(items))
+df = pd.DataFrame(items)
+print(df)
