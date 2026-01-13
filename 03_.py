@@ -1,7 +1,14 @@
-import pandas as pd 
-kunal = pd.Series(data =[1,2,3,4],index =  ["kunal", "lucky", "jaat","malik"])
-print(kunal)
-print(kunal+1)
-print(kunal*2)
-print(kunal+5)
-print(kunal-2)
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sb
+
+pokemon = pd.read_csv(r'D:\Matpotlib\pokemon.csv')
+
+print(pokemon.head())
+print(pokemon.shape)
+
+sb.countplot(data=pokemon, x='generation_id')
+plt.title("Pokémon Count per Generation")
+plt.xlabel("Generation")
+plt.ylabel("Count")
+plt.show()
