@@ -1,9 +1,12 @@
+import numpy as np
 import pandas as pd
-grocereries = pd.Series(data=[30,20,10,"yes", "no"],  index = ["apples", "bananas", "oranges", "milk", "bread"])
-print(grocereries)
-print(grocereries.dtype)
-print(grocereries.size)
-print(grocereries.ndim)
-print(grocereries.index)
-print(grocereries.values)
-print("apples" in grocereries)
+import matplotlib.pyplot as plt
+import seaborn as sb
+
+pokemon = pd.read_csv(r'D:\Matpotlib\pokemon.csv')
+
+print(pokemon.shape)
+print(pokemon.head(10))
+
+sb.countplot(data=pokemon, x='generation_id')
+plt.show()
