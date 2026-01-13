@@ -1,4 +1,8 @@
 import pandas as pd
-grocereries = pd.Series(data=[30,20,10,"yes", "no"],  index = ["apples", "bananas", "oranges", "milk", "bread"])
-print(grocereries)
-print(grocereries["milk"])
+import matplotlib.pyplot as plt
+import seaborn as sb
+
+pokemon = pd.read_csv(r'D:\Matpotlib\pokemon.csv')
+
+sb.countplot(data=pokemon, x='generation_id')
+plt.show()
