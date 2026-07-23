@@ -5,3 +5,5 @@
 * numpy
 * matplotlib
 * DataFrame
+* Basics Of ML
+* Basics of DL
