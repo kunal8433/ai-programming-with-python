@@ -7,3 +7,4 @@
 * DataFrame
 * Basics Of ML
 * Basics of DL
+* NLP
